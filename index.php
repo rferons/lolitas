@@ -207,7 +207,8 @@ line-height: 1.4;
 <body>
 
 <section class='container'>
-          <hgroup>
+        <h1> Hey Marcus!! I just made this change using git to push my changes... yay!!!</h1> 
+	 <hgroup>
             <h1>Welcome to your PHP application on OpenShift</h1>
           </hgroup>
 
