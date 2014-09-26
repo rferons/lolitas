@@ -24,11 +24,16 @@ var_dump($result);
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Welcome to OpenShift</title>
 
-<link rel="stylesheet" href="css/main.css">
-<style>
-  background: url('img/background.jpg');
-</style>
-<script src="js/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+      background: url('img/background.jpg');
+    </style>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/yqlgeo.js"></script>
+    <script src="js/requestLocation.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?AIzaSyDU2e1nQzTrm7mlv3TZiprp4FY47uUCul8">
+    </script>
 
 </head>
 <body>
