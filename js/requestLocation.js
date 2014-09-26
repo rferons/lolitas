@@ -52,13 +52,12 @@ jQuery(window).ready(function(){
 
                 handle_geolocation_query(position);
             }
- 
+        var map;
         function handle_geolocation_query(position){
             var mapOptions = {
               center: { lat: position.coords.latitude, lng: position.coords.longitude},
               zoom: 8
             };
-            var map = new google.maps.Map(document.getElementById('mapCanvas'),
-                mapOptions);
+            map = new google.maps.Map(document.getElementById('mapCanvas'),
+              mapOptions);
         }
-      // google.maps.event.addDomListener(window, 'load', initialize);
