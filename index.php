@@ -26,13 +26,19 @@ var_dump($result);
 
     <link rel="stylesheet" href="css/main.css">
     <style>
-      background: url('img/background.jpg');
+        html, body, #mapCanvas {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
     </style>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/yqlgeo.js"></script>
-    <script src="js/requestLocation.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?AIzaSyDU2e1nQzTrm7mlv3TZiprp4FY47uUCul8"></script>
     <script src="js/animate.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDU2e1nQzTrm7mlv3TZiprp4FY47uUCul8">
+    </script>
+    <script src="js/requestLocation.js"></script>
 </head>
 
 <body>
@@ -44,6 +50,7 @@ var_dump($result);
           <section class='col-xs-12 col-sm-6 col-md-6'>
             <section>
               <div id="mapCanvas"></div>
+              <div id="warnings_panel"></div>
             </section>
           </section>
           <section class="col-xs-12 col-sm-6 col-md-6">
