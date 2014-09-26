@@ -35,7 +35,7 @@ var_dump($result);
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/yqlgeo.js"></script>
     <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?AIzaSyDU2e1nQzTrm7mlv3TZiprp4FY47uUCul8">
+      src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDU2e1nQzTrm7mlv3TZiprp4FY47uUCul8">
     </script>
     <script src="js/requestLocation.js"></script>
 
@@ -51,7 +51,7 @@ var_dump($result);
             <section>
               <h2>Deploying code changes</h2>
               <div id="mapCanvas"></div>
-
+              <div id="warnings_panel" style="width:100%;height:10%;text-align:center"></div>
             </section>
 
           </section>
