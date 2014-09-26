@@ -1,3 +1,22 @@
+<?php
+session_start();
+
+//require the geocoder library
+require_once("geocoder/src/autoload.php");
+$adapter = new \Geocoder\HttpAdapter\CurlHttpAdapter();
+$geocoder = new \Geocoder\Geocoder();
+$chain = new \Geocoder\Provider\ChainProvider(array(
+	new \Geocoder\Provider\FreeGeoIpProvider($adapter),
+	new \Geocoder\Provider\HostIpProvider($adapter),
+	new \Geocoder\Provider\GoogleMapsProvider($adapter,'en-US','UNited States',true)
+));
+$geocoder->registerProvider($chain);
+$result = $geocoder->geocode($_SERVER['REMOTE_ADDR']);
+
+var_dump($result);
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
