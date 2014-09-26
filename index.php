@@ -41,6 +41,7 @@ var_dump($result);
           <section class='col-xs-12 col-sm-6 col-md-6'>
             <section>
               <h2>Deploying code changes</h2>
+              <div id="mapCanvas"></div>
 
             </section>
 
