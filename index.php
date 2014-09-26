@@ -31,43 +31,33 @@ var_dump($result);
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/yqlgeo.js"></script>
     <script src="js/requestLocation.js"></script>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?AIzaSyDU2e1nQzTrm7mlv3TZiprp4FY47uUCul8">
-    </script>
-
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?AIzaSyDU2e1nQzTrm7mlv3TZiprp4FY47uUCul8"></script>
+    <script src="js/animate.js"></script>
 </head>
-<body>
 
+<body>
 <section class='container'>
 	 <hgroup>
-            <h1>Who cares about Carmen San Diego? Where in the world are you?</h1>
+            <h1>Need Lolitas now?</h1>
           </hgroup>
         <div class="row">
           <section class='col-xs-12 col-sm-6 col-md-6'>
             <section>
-              <h2>Deploying code changes</h2>
               <div id="mapCanvas"></div>
-
             </section>
-
           </section>
           <section class="col-xs-12 col-sm-6 col-md-6">
-
-                <h2>Some heading 2</h2>
-
+          <button type="button" onclick="function()" id="showMore">Show Information</button>
+          <div id="informationArea">
+            <h2>Some heading 2</h2>
                 <h3>Some Heading 3</h3>
                 <p>Paragraph</p>
-
-
-
+          </div>    
           </section>
         </div>
-
-
         <footer>
           <div class="logo"><a href="https://www.openshift.com/"></a></div>
         </footer>
 </section>
-
 </body>
 </html>
