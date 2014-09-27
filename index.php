@@ -35,6 +35,7 @@ var_dump($result);
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/yqlgeo.js"></script>
     <script src="js/animate.js"></script>
+    <script src="js/loader.js"></script>
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDU2e1nQzTrm7mlv3TZiprp4FY47uUCul8">
     </script>
@@ -42,6 +43,12 @@ var_dump($result);
 </head>
 
 <body>
+<div class="spinner">
+<div class="loader">
+  <div class="double-bounce1"></div>
+  <div class="double-bounce2"></div>
+</div>
+</div>
 <section class='container'>
 	 <hgroup>
             <h1>Need Lolitas now?</h1>
@@ -55,11 +62,7 @@ var_dump($result);
           </section>
           <section class="col-xs-12 col-sm-6 col-md-6">
           <button type="button" onclick="function()" id="showMore">Show Information</button>
-          <div id="informationArea">
-            <h2>Some heading 2</h2>
-                <h3>Some Heading 3</h3>
-                <p>Paragraph</p>
-          </div>    
+          <div id="informationArea"></div>    
           </section>
         </div>
         <footer>
