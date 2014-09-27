@@ -76,7 +76,7 @@ jQuery(window).ready(function(){
                     map: map
             }
             directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
-            
+            directionsDisplay.setPanel(document.getElementById('informationArea'));
             // Instantiate an info window to hold step text.
             stepDisplay = new google.maps.InfoWindow();
             
@@ -110,31 +110,5 @@ jQuery(window).ready(function(){
               directionsDisplay.setDirections(response);
               //showSteps(response);
             }
-          });
-        }
-
-        function showSteps(directionResult) {
-          // For each step, place a marker, and add the text to the marker's
-          // info window. Also attach the marker to an array so we
-          // can keep track of it and remove it when calculating new
-          // routes.
-          var myRoute = directionResult.routes[0].legs[0];
-
-          for (var i = 0; i < myRoute.steps.length; i++) {
-            var marker = new google.maps.Marker({
-              position: myRoute.steps[i].start_location,
-              map: map
-            });
-            attachInstructionText(marker, myRoute.steps[i].instructions);
-            markerArray[i] = marker;
-          }
-        }
-
-        function attachInstructionText(marker, text) {
-          google.maps.event.addListener(marker, 'click', function() {
-            // Open an info window when the marker is clicked on,
-            // containing the text of the step.
-            stepDisplay.setContent(text);
-            stepDisplay.open(map, marker);
           });
         }
