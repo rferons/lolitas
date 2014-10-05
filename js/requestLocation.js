@@ -105,10 +105,15 @@ jQuery(window).ready(function(){
           // function to create markers for each step.
           directionsService.route(request, function(response, status) {
             if (status == google.maps.DirectionsStatus.OK) {
-              var warnings = document.getElementById('warnings_panel');
-              warnings.innerHTML = '<b>' + response.routes[0].warnings + '</b>';
-              directionsDisplay.setDirections(response);
-              //showSteps(response);
+                var warnings = document.getElementById('warnings_panel');
+                warnings.innerHTML = '<b>' + response.routes[0].warnings + '</b>';
+                directionsDisplay.setDirections(response);
+                
+                getHeaders();
             }
           });
+        }
+
+        function getHeaders(){
+            $(   
         }
