@@ -1,9 +1,9 @@
-  .logo {
-    background-size: cover;
-    height: 58px;
-    width: 180px;
-    margin-top: 6px;
-  }
+.logo {
+  background-size: cover;
+  height: 58px;
+  width: 180px;
+  margin-top: 6px;
+}
 .logo a {
   display: block;
   width: 100%;
@@ -165,6 +165,7 @@ html {
 }
 #mapCanvas{
   height: 100%;
+  min-height: 500px;
   width: 100%;
   box-shadow: 10px 10px 5px #888888;
   border: 1px solid gray;
@@ -185,7 +186,7 @@ html {
   height: 60px;
  
   position: relative;
-  margin: 100px auto;
+  /*margin: 100px auto;*/
 }
 .double-bounce1, .double-bounce2 {
   width: 100%;

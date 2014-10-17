@@ -1,45 +1,25 @@
-<?php
-session_start();
-
-//require the geocoder library
-require_once("geocoder/src/autoload.php");
-$adapter = new \Geocoder\HttpAdapter\CurlHttpAdapter();
-$geocoder = new \Geocoder\Geocoder();
-$chain = new \Geocoder\Provider\ChainProvider(array(
-	new \Geocoder\Provider\FreeGeoIpProvider($adapter),
-	new \Geocoder\Provider\HostIpProvider($adapter),
-	new \Geocoder\Provider\GoogleMapsProvider($adapter,'en-US','UNited States',true)
-));
-$geocoder->registerProvider($chain);
-$result = $geocoder->geocode($_SERVER['REMOTE_ADDR']);
-
-var_dump($result);
-
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>LoLitas?</title>
-
-    <link rel="stylesheet" href="css/main.css">
-    <style>
-        html, body, #mapCanvas {
-            height: 100%;
-            margin: 0px;
-            padding: 0px;
-        }
-    </style>
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/yqlgeo.js"></script>
-    <script src="js/animate.js"></script>
-    <script src="js/loader.js"></script>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDU2e1nQzTrm7mlv3TZiprp4FY47uUCul8">
-    </script>
-    <script src="js/requestLocation.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+      html, body, #mapCanvas {
+          height: 100%;
+          margin: 0px;
+          padding: 0px;
+      }
+  </style>
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/yqlgeo.js"></script>
+  <script src="js/animate.js"></script>
+  <script src="js/loader.js"></script>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDU2e1nQzTrm7mlv3TZiprp4FY47uUCul8">
+  </script>
+  <script src="js/requestLocation.js"></script>
 </head>
 
 <body>

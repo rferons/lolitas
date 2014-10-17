@@ -113,7 +113,3 @@ jQuery(window).ready(function(){
             }
           });
         }
-
-        function getHeaders(){
-            $(   
-        }
