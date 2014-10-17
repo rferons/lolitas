@@ -108,8 +108,6 @@ jQuery(window).ready(function(){
                 var warnings = document.getElementById('warnings_panel');
                 warnings.innerHTML = '<b>' + response.routes[0].warnings + '</b>';
                 directionsDisplay.setDirections(response);
-                
-                getHeaders();
             }
           });
         }
