@@ -7,7 +7,7 @@ require_once __DIR__ . '/TwitterOAuth/Exception/TwitterException.php';
 
 use TwitterOAuth\TwitterOAuth;
 
-if($_GET){
+// if($_GET){
 	
 	date_default_timezone_set('UTC');
 
@@ -22,7 +22,7 @@ if($_GET){
 	  'consumer_secret' => '61lYqn3qn3Kv0XPcWxkvYAz940tIf4HTiI1AC2abLxiMvziYhL',
 	  'oauth_token' => '216797952-gDeNkYxzmMGXyvitjGL34ae3334GXv0Ijfu8xhdJ',
 	  'oauth_token_secret' => 'RgDwaTtpphZ2Nbc3sxmYC9QwgGywNH4pG2smcMaZ4m0g3',
-	  'output_format' => 'json'
+	  'output_format' => 'array'
 	);
 
 	/**
@@ -37,7 +37,7 @@ if($_GET){
 	*/
 	$params = array(
 	  'screen_name' => 'LolitasTacoShop',
-	  'count' => 10,
+	  'count' => 5,
 	  'exclude_replies' => true
 	);
 
@@ -46,8 +46,7 @@ if($_GET){
 	*/
 	$response = $tw->get('statuses/user_timeline', $params);
 
-	var_dump($response);
-}
+//  }
 
 ?>
 
@@ -96,8 +95,11 @@ if($_GET){
           </section>
           <section class="col-xs-12 col-sm-6 col-md-6">
           <button type="button" onclick="function()" id="showMore">Show Information</button>
-          <div id="informationArea"></div>    
+          <div id="informationArea"></div>  
+            <a class="twitter-timeline" href="https://twitter.com/LolitasTacoShop" data-widget-id="523540163905871873">Tweets by @LolitasTacoShop</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           </section>
+        </div>
+        <div id='twitter'>
         </div>
         <footer>
           <div class="logo"><a href="https://www.openshift.com/"></a></div>
