@@ -76,6 +76,7 @@ use TwitterOAuth\TwitterOAuth;
 </head>
 
 <body>
+<!--Just my test comment-->
 <div class="spinner">
 <div class="loader">
 <img src="img/burrito.gif" alt="">
