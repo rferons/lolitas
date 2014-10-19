@@ -45,8 +45,9 @@ var_dump($result);
 <body>
 <div class="spinner">
 <div class="loader">
-  <div class="double-bounce1"></div>
-  <div class="double-bounce2"></div>
+<img src="img/burrito.gif" alt="">
+  <!--<div class="double-bounce1"></div>
+  <div class="double-bounce2"></div>-->
 </div>
 </div>
 <section class='container'>

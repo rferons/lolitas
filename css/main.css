@@ -26,7 +26,8 @@ body {
   font-size: 14px;
   line-height: 1.4;
   background: url("../img/background.jpg");
-  background-repeat: both;
+  background-repeat: repeat;
+  background-attachment: fixed;
   margin: 0;
 }
 
